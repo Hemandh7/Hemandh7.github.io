@@ -21,7 +21,7 @@ body {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 30px 0;
 }
 
 h2 {
@@ -70,71 +70,58 @@ p {
   border-radius: 5px;
 }
 
-/* Home section styles */
-#home {
-  background-image: url(https://static.vecteezy.com/system/resources/previews/002/106/276/non_2x/geometric-black-and-gold-background-free-vector.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* opacity: 0.8; */
-}
-.home-content{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.home {
+  background-color: #f8f8f8;
+  text-align: center;
 }
 
-.home-img{
-  border:2px solid white;
-  width:25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.home-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-.home-img>img{
-  width:100%;
-  height:100%;
+
+.home-text {
+  margin-top: 50px;
 }
 
 #user-detail-name {
-  color: white;
-  font-size: 64px;
+  font-size: 3rem;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #user-detail-intro {
-  color: white;
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 40px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .home-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.btn {
-  display: inline-block;
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
   padding: 12px 30px;
   border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  background-color: #333;
-  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover {
-  background-color: #666;
+.btn-primary:hover {
+  background-color: #0062cc;
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* About section styles */
@@ -182,78 +169,167 @@ p {
   font-size: 24px;
   font-weight: bold;
 }
-
-
-
-
-  #projects {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 50px;
-    margin-top: 50px;
-  }
-
-  .project-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .project-card-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-
-  .project-card-title {
-    margin-top: 0;
-  }
-
-  .project-card-button {
-    margin-top: 20px;
-  }
-
-  /* Button styles */
-  .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn-primary {
-    background-color: #333;
-    color: #fff;
-  }
-
-  .btn-primary:hover {
-    background-color: #fff;
-    color: #333;
+/* Change background color and text color for section */
+#projects {
+  background-color: #f6f6f6;
+  color: #333;
 }
 
-.btn-secondary {
-background-color: #fff;
-color: #333;
-border: 1px solid #333;
+/* Center section title */
+.section-title {
+  text-align: center;
 }
 
-.btn-secondary:hover {
-background-color: #333;
-color: #fff;
+/* Add padding to container */
+.container {
+  padding: 40px 0;
 }
+
+/* Style project cards */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* On hover, scale up project card and add box shadow */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style project image */
+.project-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Style project title */
+.project-title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Style project description */
+.project-description {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Style tech stack */
+.project-tech-stack {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Style links */
+.project-github-link,
+.project-deployed-link {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.project-github-link:hover,
+.project-deployed-link:hover {
+  background-color: #555;
+ 
+}
+/* Contact Section */
+
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#contact li {
+  margin: 20px;
+  text-align: center;
+}
+
+#contact a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+#contact a:hover {
+  color: #1e90ff;
+}
+
+.contact-logo {
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.chat-link {
+  font-size: 1rem;
+  color: #1e90ff;
+  text-decoration: none;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+li:hover .chat-link {
+  display: inline-block;
+}
+
+.contact-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 20%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 50px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+  
 
 /* Footer styles */
 #footer {
