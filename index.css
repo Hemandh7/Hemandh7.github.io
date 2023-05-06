@@ -258,6 +258,44 @@ p {
   background-color: #555;
  
 }
+
+/* GitHub calendar */
+.react-activity-calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* GitHub streak stats */
+#github-streak-stats {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* GitHub top languages */
+#github-top-langs {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* GitHub stats card */
+#github-stats-card {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
 /* Contact Section */
 
 #contact {
