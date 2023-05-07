@@ -97,7 +97,7 @@ h3 {
 }
 
 #user-detail-intro {
-  font-size: 2rem;
+  font-size: 25px;
   margin-bottom: 30px;
 }
 
@@ -410,39 +410,115 @@ h3 {
 }
 
 /* GitHub calendar */
-.react-activity-calendar {
+/* GitHub Statistics Section */
+#github-stats {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.github-stats-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* GitHub streak stats */
-#github-streak-stats {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.github-calendar {
+  margin-right: 20px;
+  flex: 1;
 }
 
-/* GitHub top languages */
-#github-top-langs {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.react-activity-calendar {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* GitHub stats card */
-#github-stats-card {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.github-stats {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.stats-card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.github-languages {
+  margin-right: 20px;
+  flex: 1;
+}
+
+.top-langs {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.github-streak {
+  flex: 1;
+}
+
+.github-streak img {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+.github-stats-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.github-stats-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.stats-card p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.top-langs p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Hover effects */
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.top-langs:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.github-streak:hover img {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .github-stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .github-stats-container > div {
+    margin-bottom: 30px;
+  }
 }
 
 
