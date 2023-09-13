@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf538fe7.css",
+    "main.js": "/static/js/main.5ebcfbf2.js",
+    "static/media/HeroImage.jpg": "/static/media/HeroImage.9e786e48590a5c79105a.jpg",
+    "static/media/calender.png": "/static/media/calender.9f39baaafc1e361b5c5e.png",
+    "index.html": "/index.html",
+    "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
+    "main.5ebcfbf2.js.map": "/static/js/main.5ebcfbf2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.5ebcfbf2.js"
+  ]
+}
